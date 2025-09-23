@@ -12,6 +12,6 @@ function addFriend() {
         input.value = '';
         console.log('Current friends list:', friends);
     } else {
-        console.log('Invalid or duplicate friend name.');
+        alert('Por favor, inserte un nombre.');
     }
 }
