@@ -12,6 +12,11 @@ function addFriend() {
         input.value = '';
         console.log('Current friends list:', friends);
     } else {
+        if (friendName)
         alert('Por favor, inserte un nombre.');
+        } else {
+            alert('Este nombre ya existe. Por favor, inserte un nombre diferente.');
+        }
     }
-}
+
+function displaySecretFriend() 
