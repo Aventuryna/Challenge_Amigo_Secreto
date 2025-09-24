@@ -1,6 +1,7 @@
 let friends = [];
 let SecretFriend ='';
 
+// Función para agregar un amigo a la lista
 function addFriend() {
     console.log('Adding a friend...');
     const input = document.getElementById('friends');
@@ -19,6 +20,7 @@ function addFriend() {
     }
   }
 
+  // Función para mostrar la lista de amigos en el DOM
 function displayFriends() {
     console.log('Displaying friends list...');
     
@@ -34,3 +36,5 @@ function displayFriends() {
     
     console.log('Friends list updated in DOM');
 }
+
+// Función para sortear el amigo Secreto
