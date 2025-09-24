@@ -11,12 +11,13 @@ function addFriend() {
         friends.push(friendName);
         input.value = '';
         console.log('Current friends list:', friends);
-    } else {
-        if (friendName)
+        displayFriends();
+    } else if (!friendName) {
         alert('Por favor, inserte un nombre.');
-        } else {
-            alert('Este nombre ya existe. Por favor, inserte un nombre diferente.');
-        }
+    } else {
+        alert('Este nombre ya existe. Por favor, inserte un nombre diferente.');
     }
+}
 
-function displaySecretFriend() 
+function displayFriends() {
+    console.log('Displaying friends list...');
