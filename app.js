@@ -13,6 +13,7 @@ function addFriend() {
         input.value = '';
         console.log('Current friends list:', friends);
         displayFriends();
+        clearResult();
     } else if (!friendName) {
         alert('Por favor, inserte un nombre.');
     } else {
