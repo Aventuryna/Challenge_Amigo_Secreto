@@ -24,7 +24,7 @@ function addFriend() {
 function displayFriends() {
     console.log('Displaying friends list...');
     
-    const friendsList = document.getElementById('friendsList');
+    const friendsList = document.getElementById('displayFriends');
     
     friendsList.innerHTML = '';
     
