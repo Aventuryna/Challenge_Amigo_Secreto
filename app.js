@@ -17,7 +17,20 @@ function addFriend() {
     } else {
         alert('Este nombre ya existe. Por favor, inserte un nombre diferente.');
     }
-}
+  }
 
 function displayFriends() {
     console.log('Displaying friends list...');
+    
+    const friendsList = document.getElementById('friendsList');
+    
+    friendsList.innerHTML = '';
+    
+    for (let i = 0; i < friends.length; i++) {
+        const listItem = document.createElement('li');
+        listItem.textContent = friends[i];
+        friendsList.appendChild(listItem);
+    }
+    
+    console.log('Friends list updated in DOM');
+}
