@@ -1,1 +1,2 @@
 # Challenge_Amigo_Secreto
+Una aplicación web interactiva desarrollada como parte del Challenge de Alura Latam para organizar sorteos de "Amigo Secreto" de forma sencilla y divertida. Perfecta para intercambios de regalos en Navidad, eventos corporativos, reuniones familiares o cualquier celebración especial.
