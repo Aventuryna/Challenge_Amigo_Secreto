@@ -38,3 +38,19 @@ function displayFriends() {
 }
 
 // Función para sortear el amigo Secreto
+function drawSecretFriend() {
+    console.log('Drawing secret friend...');
+    if (friends.length === 0) {
+        alert('No hay amigos para sortear. Por favor, agregue al menos un amigo.');
+        return;
+    }
+    const randomIndex = Math.floor(Math.random() * friends.length);
+    console.log('Random index:', randomIndex);
+
+    SecretFriend = friends[randomIndex];
+    console.log('Secret friend:', SecretFriend);
+
+    const resultElement = document.getElementById('resultado');
+    resultElement.innerHTML = '<li>🎉 El amigo sorteado es: ' + SecretFriend + '</li>';
+    console.log('Result displayed in DOM');
+    }
