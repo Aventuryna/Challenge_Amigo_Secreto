@@ -54,3 +54,25 @@ function drawSecretFriend() {
     resultElement.innerHTML = '<li>🎉 El amigo sorteado es: ' + SecretFriend + '</li>';
     console.log('Result displayed in DOM');
     }
+
+// Función para limpiar la lista de amigos y el resultado
+function clearResult() {
+    console.log('Clearing previous result...');
+    const resultElement = document.getElementById('resultado');
+    resultElement.innerHTML = '';
+    SecretFriend = '';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, setting up event listeners...');
+    
+    const friendsInput = document.getElementById('friends');
+    friendsInput.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            console.log('Enter key pressed, adding friend...');
+            addFriend();
+        }
+    });
+    
+    console.log('Event listeners configured');
+});
